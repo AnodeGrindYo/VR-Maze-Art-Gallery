@@ -1,0 +1,97 @@
+@font-face {
+  font-family: Cyber;
+  src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+  font-display: swap;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+@supports (orientation: landscape) {
+  body:orientation(portrait) {
+    display: none;
+  }
+  body:after {
+    content: "Please switch to landscape mode";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 1em;
+  }
+}
+
+#fullscreen {
+  font-family: 'Cyber', sans-serif;
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  z-index: 999;
+  background-color: black;
+  color: #d600ff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  
+  transition: transform 0.3s;
+  overflow: hidden;
+  box-shadow: 0 0 10px #d600ff, 0 0 30px #d600ff, 0 0 40px #d600ff;
+}
+
+#fullscreen:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+#fullscreen::before {
+  content: '';
+  background: rgba(214,0,255,0.5);
+  width: 0;
+  height: 2px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: loading 2s infinite;
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+    left: 50%;
+    background: #d600ff;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 0;
+    background: #d600ff;
+  }
+}
+
+
+#direction-controls {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000; /* Au-dessus de la scène A-Frame */
+}
+
+.arrow {
+    background: rgba(255,255,255,0.7);
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    margin: 5px;
+    cursor: pointer;
+}
