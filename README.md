@@ -2,7 +2,7 @@
 
 Welcome to my art exhibition, a browser-based VR experience where a maze is procedurally generated, and every wall of the maze is adorned with some of my drawings. 
 
-![Virtual Maze Screenshot]([your-screenshot-link-here.png](https://cdn.discordapp.com/attachments/932672918859702355/1152162788165296138/image.png))
+![Virtual Maze Screenshot](https://cdn.discordapp.com/attachments/932672918859702355/1152162788165296138/image.png)
 
 ## Demo
 
