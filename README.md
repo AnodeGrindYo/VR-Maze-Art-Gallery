@@ -15,13 +15,6 @@ Experience the maze live [here](https://codepen.io/Adr_G/full/ZEVzLoK).
 - **VR Ready**: Engage in a VR-based navigation experience.
 - **Fully responsive and usable on a smartphone**
 
-## Configuration Constants
-
-```javascript
-const SIZE = 50;        // Defines the size of the maze.
-const MOVE_STEP = 1;    // Movement step size.
-const TILE_SIZE = 4;    // Size of each tile in the maze.
-```
 
 ## How It Works
 
